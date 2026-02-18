@@ -1,3 +1,5 @@
+## I created a bash shell script that automates the backup of files in a specified directory, carries out file integrity checks on the backed-up file and notifies the system admin when a backup is completed
+
 #!/bin/bash
 
 # === CONFIGURATION ===
