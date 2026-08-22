@@ -13,7 +13,7 @@ BACKUP_LOG="/var/log/backup_script.log"
 # Using tar to compress the source directory into a timestamped archive
 
 backup() {
-  TIMESTAMP=$(date)
+  TIMESTAMP=$(date +%Y%m%d_%H%M%S)
   BACKUP_FILE="$BACKUP_DIR/project_backup_$TIMESTAMP.tar.gz"
   
   echo "[$(date)] Starting backup..." >> "$BACKUP_LOG"
