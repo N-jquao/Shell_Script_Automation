@@ -75,7 +75,4 @@ All activity is appended to the file defined by `BACKUP_LOG` (default `/var/log/
 
 ## Recommendations
 
-A couple of optional improvements worth applying:
-
-- Use a compact timestamp format so archive filenames are clean and sortable. Replace `TIMESTAMP=$(date)` with `TIMESTAMP=$(date +%Y%m%d_%H%M%S)` to produce names like `project_backup_20260822_103045.tar.gz` instead of names containing spaces and colons.
 - Add `mkdir -p "$BACKUP_DIR"` near the top so the first run does not fail if the backup directory does not yet exist.
